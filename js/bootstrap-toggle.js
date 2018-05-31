@@ -1,8 +1,8 @@
 /*! ========================================================================
- * Bootstrap Toggle: bootstrap-toggle.js v2.2.0
+ * Bootstrap Toggle: bootstrap-toggle.js v2.2.3
  * http://www.bootstraptoggle.com
  * ========================================================================
- * Copyright 2014 Min Hur, The New York Times Company
+ * Copyright 2018 Min Hur, The New York Times Company
  * Licensed under MIT
  * ======================================================================== */
 
@@ -19,13 +19,13 @@
 		this.render()
 	}
 
-	Toggle.VERSION  = '2.2.0'
+	Toggle.VERSION  = '2.2.3'
 
 	Toggle.DEFAULTS = {
 		on: 'On',
 		off: 'Off',
 		onstyle: 'primary',
-		offstyle: 'default',
+		offstyle: 'light',
 		size: 'normal',
 		style: '',
 		width: null,
@@ -56,7 +56,7 @@
 			.addClass(this._onstyle + ' ' + size)
 		var $toggleOff = $('<label class="btn">').html(this.options.off)
 			.addClass(this._offstyle + ' ' + size + ' active')
-		var $toggleHandle = $('<span class="toggle-handle btn btn-default">')
+		var $toggleHandle = $('<span class="toggle-handle btn btn-light">')
 			.addClass(size)
 		var $toggleGroup = $('<div class="toggle-group">')
 			.append($toggleOn, $toggleOff, $toggleHandle)
